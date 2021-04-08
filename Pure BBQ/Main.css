@@ -1,0 +1,134 @@
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        background-image: url(background.jpeg);
+        background-position: center;
+        border: 2px solid black;
+        padding:20px;
+        min-height: 100%;
+        display:grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 152px 500px 40px;    
+    }
+    .logo {
+        border: 2px solid black;
+        grid-column: 1/2
+
+    }
+    .siteheader {
+        border: 2px solid black;
+        background:blue;
+        grid-column: 2/-1;
+    }
+    .sitemenu {
+        border: 2px solid black;
+        background:chartreuse;
+        grid-column: 9/11;
+        grid-row: 2/-1;
+    }
+    .siteblog {
+        border: 2px solid black;
+        background:crimson;
+        grid-column:1/9;
+    }
+    .sitefooter {
+        border:2px solid black;
+        background:darkgoldenrod;
+        grid-column: 1/9;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    .container {
+        background-image: url(background.jpeg);
+        background-position: center;
+        border: 2px solid black;
+        padding:20px;
+        max-width: 100%;
+        display:grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat (2 1fr);
+        grid-template-rows: 152px 40px 300px 40px;  
+    }
+    .logo {
+        border: 2px solid black;
+        grid-column: 1/2
+
+    }
+    .siteheader {
+        border: 2px solid black;
+        background:blue;
+        grid-column:2/-1;
+        grid-row:1;
+     
+        
+    }
+    .sitemenu {
+        border: 2px solid black;
+        background:chartreuse;
+        grid-column:1/-1;
+        grid-row:2;
+        
+ 
+    }
+    .siteblog {
+        border: 2px solid black;
+        background:crimson;
+        grid-column:1/-1;
+        grid-row:3;
+       
+    }
+    .sitefooter {
+        border:2px solid black;
+        background:darkgoldenrod;
+        grid-column:1/-1;
+        grid-row:4;
+       
+    }
+}
+@media screen and (min-width: 1024px) {
+
+    .container {
+        background-image: url(background.jpeg);
+        background-position: center;
+        border: 2px solid black;
+        padding:20px;
+        max-width: 100%;
+        display:grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 152px 300px 300px 40px;  
+    }
+    .logo {
+        border: 2px solid black;
+        grid-column: 1/2
+    }
+    .siteheader {
+        border: 2px solid black;
+        background:blue;
+        grid-column:2/-1;
+        grid-row:1;
+    }
+    .sitemenu {
+        border: 2px solid black;
+        background:chartreuse;
+        grid-column:8/-1;
+        grid-row:2/-1;
+    }
+    .siteblog {
+        border: 2px solid black;
+        background:crimson;
+        grid-column:1/8;
+        grid-row: 2/-1;
+    }
+    .sitefooter {
+        border:2px solid black;
+        background:darkgoldenrod;
+        grid-column:8/-1;
+        grid-row:3/-1;
+    }
+}
